@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>Trashcan &#x1f5d1;</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <center>
+  <img src="https://i.redd.it/mobjrlmco8mb1.png" alt="just imagine a shity logo" width="200" height="200">
+</head>
+<body>
+  <center>
+  <h1>trashcan</h1>
+  <ul>
+    <li><a href="/">Introduction</a></li>
+    <li><a href="suggestmilk.html">Submit Recommendations!</a></li>
+    <li><a href="enjoymilk.html">Find Music!!</a></li>
+    <li><a href="sourmilk.html">Trashcan</a></li>
+  </ul>
+  <br>
+  <h2>This is where I belong.</h2>
+  <br>
+  <h2>Not in a good mood today</h2>
+  <br><br>
+  <form method=post>
+    <label for="rant">Me blah blah goes here: </label><br>
+    <textarea id="rant" name="rant" cols="30" rows="10" required></textarea><br>
+    <input type="submit" value="Ok, no one will see this :)">
+  </form>
+  <br><br><br>
+  {% if rants %}
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>Rant</th>
+    </tr>
+    {% for rant in rants %}
+    <tr>
+      <td>{{ rant }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+    <p>Well the milk is good today and no one is angry.</p>
+  {% endif %}
+  </center>
+  <br><br><br><br>
+</body>
+</html>

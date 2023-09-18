@@ -1,0 +1,7 @@
+0600 wake up
+0700 go school
+1730 go home
+1900 econs
+2100 physics
+2300 math
+0100 computing

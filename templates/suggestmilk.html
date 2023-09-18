@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>Suggest Favourite Milk</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <center>
+  <img src="https://i.redd.it/mobjrlmco8mb1.png" alt="just imagine a shity logo" width="200" height="200">
+</head>
+<body>
+  <center>
+  <h1>submit your favourite(s) here</h1>
+  <ul>
+    <li><a href="/">Introduction</a></li>
+    <li><a href="suggestmilk.html">Submit Recommendations!</a></li>
+    <li><a href="enjoymilk.html">Find Music!!</a></li>
+  </ul>
+  <br>
+  <h2>Submit form: </h2>
+  <form method="POST" enctype="multipart/form-data">
+    <label for="song">Enter the song title: </label>
+    <input type="text" id="song" name="song" required><br><br>
+    <label for="artist">Enter the artist: </label>
+    <input type="text" id="artist" name="artist" required><br><br>
+    <label for="photo">Upload the album cover (for funz 😊): </label>
+    <input type="file" id="photo" name="photo" required><br><br>
+    <input type="submit" value="I WANT TO SHARE THIS PIECE OF ART.">
+  </form>
+  <br>
+  <br>
+  <br>
+  </center>
+</body>
+</html>
